@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAS Infosoft</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="conn.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="SAS Infosoft Logo">
+      </div>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+<section class="hero-slider">
+  <section id="home" class="hero-slider"></section>
+  <div class="slide active" style="background-image: url('images/slide1.jpg');">
+    <div class="hero-content">
+      
+    <div class="slide-text"></div>
+      <h1>Transforming IT Networks</h1>
+      <p>Empowering Businesses with Innovative Solutions</p>
+      <a href="#services" class="btn-primary">Explore Services</a>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <div class="slide" style="background-image: url('images/slide2.jpg');">
+    <div class="hero-content">
+      <h1>Cloud & Infrastructure</h1>
+      <p>Secure, scalable, and reliable IT solutions for the future</p>
+      <a href="#services" class="btn-primary">Learn More</a>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('images/slide3.jpg');">
+    <div class="hero-content">
+      <h1>Custom Software Development</h1>
+      <p>Building software that drives your business growth</p>
+      <a href="#services" class="btn-primary">Get Started</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- Left images -->
+      <div class="about-images">
+        <img src="images/aboutus_image1.jpg" alt="Software Development">
+        <img src="images/aboutus_image2.jpg" alt="Data Center">
+        <img src="images/aboutus_image3.jpg" alt="Team Collaboration">
+        <img src="images/aboutus_image4.jpg" alt="Cybersecurity">
+      </div>
+      <!-- Right text -->
+      <div class="about-text">
+        <h6>About Us</h6>
+        <h2>SAS Infosoft Private Limited</h2>
+        <p>
+          SAS Infosoft is a leading provider of professional consulting services specializing in advanced network and data center solutions. We are dedicated to delivering cutting-edge technology and robust security controls to empower businesses and government organizations.
+        </p>
+        <p>
+          Our team of experts excels in designing, deploying, and maintaining scalable and secure IT infrastructures that meet the evolving needs of our clients. With a focus on innovation and reliability, we provide tailored solutions for data center optimization, network integration, and comprehensive cybersecurity frameworks.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h1>Our Services</h1>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/softwaredevelopment.jpg" alt="Software Development">
+        <h2>Software Development</h2>
+        <p>Custom software tailored to your business needs, ensuring efficiency and scalability.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/itInfrastructure.jpeg" alt="IT Infrastructure Support">
+        <h2>IT Infrastructure Support</h2>
+        <p>Reliable IT infrastructure setup, monitoring, and support for smooth operations.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/cloudservices.jpg" alt="Cloud Services">
+        <h2>Cloud Services</h2>
+        <p>Secure cloud solutions for storage, collaboration, and remote accessibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<!-- <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.</p> -->
+
+    <!-- <div class="contact-grid"> -->
+      <!-- Contact Form -->
+      <!-- <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form> -->
+
+      <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Send us a message and we’ll get back to you soon.</p>
+    
+    <form id="contactForm" action="/send-message" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+<footer class="main-footer">
+  <div class="footer-container">
+    <!-- Left: Logo & Contact -->
+    <div class="footer-left">
+      <img src="images/logo.png" alt="SAS Infosoft Logo" class="footer-logo">
+      <p><i class="fas fa-envelope"></i> info@sasinfosoft.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> NIL 45 B, ., MALVIYA NAGAR, South Delhi, Delhi, 110017</p>
+    </div>
+
+    <!-- Middle: Navigation & Solutions -->
+    <div class="footer-middle">
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Solutions</h3>
+        <ul>
+          <li><a href="#services">Software Development</a></li>
+          <li><a href="#services">IT Infrastructure Support</a></li>
+          <li><a href="#services">Cloud Services</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: Newsletter & Social -->
+    <div class="footer-right">
+      <h3>Subscribe to Newsletter</h3>
+      <form class="newsletter">
+        <input type="email" placeholder="Enter Your Email Address">
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </form>
+      <h4>Follow us on social media:</h4>
+      <!-- <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div> -->
+      <div class="social-icons">
+  <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/company/yourcompany" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Copyright ©2025. <span>SAS Infosoft</span></p>
+  </div>
+</footer>
+
+<!-- Scroll Buttons -->
+<div class="scroll-buttons">
+  <button id="scrollUp"><i class="fas fa-arrow-up"></i></button>
+  <button id="scrollDown"><i class="fas fa-arrow-down"></i></button>
+</div>
+
+<script src="conn.js"></script>
+</body>
+</html>
